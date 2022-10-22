@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/434a77214b.js" crossorigin="anonymous"></script>
+    <title>Javascript CRUD</title>
+</head>
+<body>
+ <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">JS:::CRUD</a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+    </nav>
+ </header>
+<main class="main-content">
+    <div class="crud-container">
+        <div class="crud-header">
+            <h1>Estudiantes Registrados:</h1>
+            <button class="button is-success" id="openRegisterModal"><i class="fa-regular fa-plus"></i><span>Nuevos Estudiantes</span></button>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th><i class="fa-solid fa-list"></i>#</th>
+                <th><i class="fa-regular fa-user"></i>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido materno</th>
+                <th><i class="fa-solid fa-mobile-screen-button"></i>Telefono</th>
+                <th><i class="fa-regular fa-envelope"></i> email</th>
+                <th>opciones opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>Eli</td>
+                <td>Mandujano</td>
+                <td>Condor</td>
+                <td>962833765</td>
+                <td>elite3210@gmail.com</td>
+                <td><button class="button is-warning"><i class="fas fa-pencil-alt"></i></button><button class="button is-danger"><i class="fas fa-trash"></i></button></td>     
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</main> 
+<div class="modal" id="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Registrar nuevo estudiante:</p>
+        <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+      </header>
+      <section class="modal-card-body"></section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+      </footer>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
