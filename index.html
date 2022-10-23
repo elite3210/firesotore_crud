@@ -57,16 +57,66 @@
 <div class="modal" id="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Registrar nuevo estudiante:</p>
-        <button class="delete" aria-label="close" id="closeRegisterModal"></button>
-      </header>
-      <section class="modal-card-body"></section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-      </footer>
+        <header class="modal-card-head">
+            <p class="modal-card-title">Registrar nuevo estudiante:</p>
+            <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+        </header>
+        <section class="modal-card-body">
+            <form class="register-form">
+                <div class="field">
+                    <label class="label" name = "nombre">Nombre:</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ingresa tu nombre">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" name = "apePat">Apellido Paterno:</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ingresa tu apellido paterno">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" name = "apeMat">Apellido materno:</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ingresa tu apellido materno">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" name = "tel">Telefono:</label>
+                    <div class="control has-icons-left">
+                    <input class="input is-success" type="tel" placeholder="+51 962833765t">
+                    <span class="icon is-small is-left">
+                    <i class="fas fa-phone"></i>
+                    </span>
+                </div>
+                <div class="field">
+                    <label class="label" name ="email">Email:</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-danger" type="email" placeholder="Email input" value="hello@world.com">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                <div class="field">
+                    <label class="label" name="desc">Descripción:</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>     
+        </section>
+                <footer class="modal-card-foot">
+                    <button type="submit" class="button is-success">
+                        <i class="fas fa-save"></i>
+                        <span>Registrar</span>
+                    </button>
+                </footer>
+            </form>
+
+      
     </div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
