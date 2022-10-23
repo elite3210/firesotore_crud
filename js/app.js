@@ -24,4 +24,6 @@ const showRegisterModal = ()=>{
 openModal.addEventListener('click',showRegisterModal)
 closeModal.addEventListener('click',showRegisterModal)
 
-registerForm.addEventListener('submit', (e)=>{})
+registerForm.addEventListener('submit', (e)=>{
+    e.preventDefault()
+})
