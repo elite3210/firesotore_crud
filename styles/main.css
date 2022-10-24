@@ -24,7 +24,7 @@ body{
     align-items: center;
 }
 .crud-container{
-    width: 60%;
+    width: 100%;
     border: 2px cornflowerblue;
     padding: 2rem 3rem;
     overflow: auto;
@@ -38,10 +38,11 @@ body{
     border-bottom: 1px;
 }
 .crud-header h1{
-    font-size: large;
+    font-size: smaller;
 }
 .table thead{
     background-color: rgb(138, 243, 203);
+    font-size: smaller;
 }
 .button span{
     margin-left: 10px;
